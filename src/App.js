@@ -1,5 +1,5 @@
  import './App.css';
-import Header from './Components/Header';
+import Header from './Header';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -17,9 +17,11 @@ function App() {
     <div className="App">
       <Header/>
     </div>
-      <Route path = "/" component={Home} />
-      <Route path = "/Messages" component={Messages} />
-      <Route path = "/Users" component={Users} />
+      <Switch>
+        <Route path = "/" component={Home} exact/>
+        <Route path = "/Messages" component={Messages} />
+        <Route path = "/Users" component={Users} />
+      </Switch>
     </Router>
   );
 }
