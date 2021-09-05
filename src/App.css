@@ -8,5 +8,10 @@
   list-style-type: none;
   width: 500px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

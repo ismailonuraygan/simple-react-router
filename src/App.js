@@ -10,17 +10,19 @@ import {
 import { Home } from './Home';
 import { Messages } from './Messages';
 import { Users } from './Users';
+import NotFound from './NotFound';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Pages" >
     <div className="App">
       <Header/>
     </div>
       <Switch>
-        <Route path = "/" component={Home} exact/>
+        <Route path = "/Home" component={Home} exact/>
         <Route path = "/Messages" component={Messages} />
         <Route path = "/Users" component={Users} />
+        <Route component={NotFound} />
       </Switch>
     </Router>
   );

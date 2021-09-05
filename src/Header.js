@@ -7,10 +7,13 @@ const Header = () => {
             <h1>Simple React Router</h1>
             <ul className = "nav">
                 <li>
-                    <Link to= "/">Home</Link>
+                    <Link to= "/Home">Home</Link>
                 </li>
                 <li>
                     <Link to= "/Messages">Messages</Link>
+                </li>
+                <li>
+                    <Link to= "/Users">Users</Link>
                 </li>
                 <li>
                     <Link to= "/Users">Users</Link>
